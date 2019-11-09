@@ -29,5 +29,5 @@ def insert_sort(data):
 
 if __name__ == "__main__":
     
-    data = [6,3,2,5,4,9,8,11, 4,2,5]
+    data = [6,3,2,5,4,9,8,11,4,2,5]
     print(insert_sort(data))
