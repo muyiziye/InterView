@@ -35,7 +35,8 @@ int main(){
     print_arry(sort_list, list_length, "Show the original list:");
 
     //bubble_sort(sort_list, list_length);
-    insert_sort_order(sort_list, list_length);
+    //insert_sort_order(sort_list, list_length);
+    insert_sort_reverse(sort_list, list_length);
 
     print_arry(sort_list, list_length, "Show the final list:");
 
