@@ -6,3 +6,4 @@ cmake_minimum_required(VERSION 2.8)
 set(CMAKE_INSTALL_PREFIX ${PROJ_SOURCE_DIR}/Output)
 
 add_subdirectory(${PROJ_SOURCE_DIR}/sort)
+add_subdirectory(${PROJ_SOURCE_DIR}/constructor)
