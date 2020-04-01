@@ -10,3 +10,14 @@ private:
     int* p_instance;
 
 };
+
+class sub_class: public constructor_test{
+public:
+    sub_class(int type_1);
+    sub_class(int type_2, bool tmp);
+    sub_class(const sub_class& obj);
+    sub_class &operator =(const sub_class& obj);
+
+private:
+    int* p_instance;
+};
