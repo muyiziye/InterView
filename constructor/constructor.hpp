@@ -5,6 +5,7 @@ public:
     constructor_test(int type_2, bool tmp);
     constructor_test(const constructor_test& obj);
     constructor_test &operator =(const constructor_test& obj);
+    ~constructor_test();
 
 private:
     int* p_instance;
@@ -17,6 +18,7 @@ public:
     sub_class(int type_2, bool tmp);
     sub_class(const sub_class& obj);
     sub_class &operator =(const sub_class& obj);
+    ~sub_class();
 
 private:
     int* p_instance;

@@ -17,7 +17,14 @@ constructor_test::constructor_test(int type_2, bool tmp){
 constructor_test::constructor_test(const constructor_test& obj){
     cout << "call copy constructor" << endl;
     p_instance = new int(*(obj.p_instance));
-    //*this = obj;
+}
+
+constructor_test::~constructor_test(){
+    cout << "call destory constructor_test" << endl;
+    if(p_instance){
+        delete p_instance;
+        p_instance = NULL;
+    }
 }
 
 constructor_test & constructor_test::operator =(const constructor_test& obj){
@@ -42,6 +49,14 @@ sub_class::sub_class(const sub_class& obj):constructor_test(obj)
 {
     cout << "call sub class copy constructor" << endl;
     p_instance = new int(*(obj.p_instance));
+}
+
+sub_class::~sub_class(){
+    cout << "call destory sub_class" << endl;
+    if(p_instance){
+        delete p_instance;
+        p_instance = NULL;
+    }
 }
 
 sub_class & sub_class::operator =(const sub_class& obj){
