@@ -7,3 +7,4 @@ set(CMAKE_INSTALL_PREFIX ${PROJ_SOURCE_DIR}/Output)
 
 add_subdirectory(${PROJ_SOURCE_DIR}/sort)
 add_subdirectory(${PROJ_SOURCE_DIR}/constructor)
+add_subdirectory(${PROJ_SOURCE_DIR}/point)
